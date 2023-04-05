@@ -28,7 +28,7 @@
 
             if (userPrefersDark)
                 document.documentElement.setAttribute('data-bs-theme', 'dark');
-            else 
+            else
                 document.documentElement.setAttribute('data-bs-theme', 'light');
         }
     </script>
@@ -39,7 +39,24 @@
         <img class="invisible img-fluid" src="https://images.placeholders.dev/?width=1920&height=1080" alt="immagine">
     </div>
 
-    <div class="container container-fluid my-5">
+    <div class="container container-fluid mt-3">
+        <div class="row">
+            <!-- Theme colored buttons side by side on large one separate rows otherwise -->
+            <div class="col-12 offset-lg-2 col-lg-4 mb-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card px-3 pt-3">
+                        <p class="placeholder col-12"></p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 col-lg-4 mb-3">
+                <a href="#" class="text-decoration-none">
+                    <div class="card px-3 pt-3">
+                        <p class="placeholder col-12"></p>
+                    </div>
+                </a>
+            </div>
+        </div>
         <div class="row mb-3">
             <div class="col-12 offset-lg-2 col-lg-8">
                 <div class="card">
@@ -47,8 +64,10 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <img-comparison-slider value="75">
-                                    <img class="card-img-top" slot="first" src="https://images.placeholders.dev/?width=1920&height=1080&text=Prima">
-                                    <img class="card-img-top" slot="second" src="https://images.placeholders.dev/?width=1920&height=1080&text=Dopo">
+                                    <img class="card-img-top" slot="first"
+                                        src="https://images.placeholders.dev/?width=1920&height=1080&text=Prima">
+                                    <img class="card-img-top" slot="second"
+                                        src="https://images.placeholders.dev/?width=1920&height=1080&text=Dopo">
                                 </img-comparison-slider>
                             </div>
                             <div class="carousel-item">
@@ -71,18 +90,18 @@
                     </div>
                     <div class="card-body mt-4">
                         <h3 class="card-title">
-                            <p class="placeholder placeholder col-4"></p>
+                            <p class="placeholder col-4"></p>
                         </h3>
                         <p class="card-text">
-                        <p class="placeholder placeholder col-8"></p>
-                        <p class="placeholder placeholder col-4"></p>
-                        <p class="placeholder placeholder col-6"></p>
-                        <p class="placeholder placeholder col-8"></p>
-                        <p class="placeholder placeholder col-3"></p>
-                        <p class="placeholder placeholder col-5"></p>
-                        <p class="placeholder placeholder col-7"></p>
-                        <p class="placeholder placeholder col-4"></p>
-                        <p class="placeholder placeholder col-6"></p>
+                        <p class="placeholder col-8"></p>
+                        <p class="placeholder col-4"></p>
+                        <p class="placeholder col-6"></p>
+                        <p class="placeholder col-8"></p>
+                        <p class="placeholder col-3"></p>
+                        <p class="placeholder col-5"></p>
+                        <p class="placeholder col-7"></p>
+                        <p class="placeholder col-4"></p>
+                        <p class="placeholder col-6"></p>
                     </div>
                 </div>
             </div>
@@ -92,15 +111,15 @@
             <div class="col-12 col-lg-4 offset-lg-2 mb-3">
                 <div class="w-100 border p-3 rounded">
                     <h3>
-                        <p class="placeholder placeholder col-12"></p>
+                        <p class="placeholder col-12"></p>
                     </h3>
                     <p>
-                    <p class="placeholder placeholder col-12"></p>
-                    <p class="placeholder placeholder col-4"></p>
-                    <p class="placeholder placeholder col-7"></p>
-                    <p class="placeholder placeholder col-10"></p>
-                    <p class="placeholder placeholder col-8"></p>
-                    <p class="placeholder placeholder col-3"></p>
+                    <p class="placeholder col-12"></p>
+                    <p class="placeholder col-4"></p>
+                    <p class="placeholder col-7"></p>
+                    <p class="placeholder col-10"></p>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-3"></p>
                     </p>
                 </div>
             </div>
@@ -108,15 +127,15 @@
             <div class="col-12 col-lg-4">
                 <div class="w-100 border p-3 rounded mb-3">
                     <h3>
-                        <p class="placeholder placeholder col-12"></p>
+                        <p class="placeholder col-12"></p>
                     </h3>
                     <p>
-                    <p class="placeholder placeholder col-12"></p>
-                    <p class="placeholder placeholder col-4"></p>
-                    <p class="placeholder placeholder col-7"></p>
-                    <p class="placeholder placeholder col-10"></p>
-                    <p class="placeholder placeholder col-8"></p>
-                    <p class="placeholder placeholder col-3"></p>
+                    <p class="placeholder col-12"></p>
+                    <p class="placeholder col-4"></p>
+                    <p class="placeholder col-7"></p>
+                    <p class="placeholder col-10"></p>
+                    <p class="placeholder col-8"></p>
+                    <p class="placeholder col-3"></p>
                     </p>
                 </div>
             </div>
@@ -148,7 +167,7 @@
             <div class="col-12 offset-lg-2 col-lg-8">
                 <div class="w-100 border p-3 rounded">
                     <h3>
-                        <p class="placeholder placeholder col-12"></p>
+                        <p class="placeholder col-12"></p>
                     </h3>
 
                     <iframe
@@ -161,17 +180,18 @@
         </div>
     </div>
 
-    <a id="theme-changer" href="javascript:void(null)" class="btn rounded-circle sticky-bottom text-end w-100" role="button">
+    <a id="theme-changer" href="javascript:void(null)" class="btn rounded-circle sticky-bottom text-end w-100"
+        role="button">
         <h3><i class="bi bi-moon-stars-fill"></i></h3>
     </a>
 
     <footer class="bg-black text-white p-3 px-5 pt-4">
         <div class="row">
             <div class="col">
-                <p class="placeholder placeholder col-12"></p>
+                <p class="placeholder col-12"></p>
             </div>
             <div class="col text-end">
-                <p class="placeholder placeholder col-4"></p>
+                <p class="placeholder col-4"></p>
             </div>
         </div>
     </footer>
@@ -214,4 +234,5 @@
         });
     </script>
 </body>
+
 </html>
